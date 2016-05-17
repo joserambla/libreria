@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="jumbotron">
+  <h1>Librerinda</h1>
+  <p>Aquí está to</p>
+  
+  <%= link_to 'Books', '#', class: 'btn btn-primary btn-lg' %>
+  <% if !user_session %>
+    <%= link_to 'Registrarse', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+  <% end %>
+</div>
